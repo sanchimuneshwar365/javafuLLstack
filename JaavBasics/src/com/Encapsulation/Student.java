@@ -26,8 +26,7 @@ public String getGender() {
 	return gender;
     }
 
-}	
-public Static void main(String[] args) {
+void main(String[] args) {
 	
 	Scanner sc=new Scanner(System.in);
 	System.out.println("enter your name");
