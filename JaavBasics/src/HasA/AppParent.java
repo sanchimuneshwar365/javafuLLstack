@@ -7,15 +7,19 @@ public class AppParent {
 		
 		
 	}
+
+	public String x;
 }
 abstract class Parent{
 	int x=10;
-final abstract void disp();
+    abstract void disp();
 }
-class Child extends
+class Child extends AppParent{
     int x=20;
-void disp() {
+    void disp() {
 	System.out.println("this is child methode");
+	System.out.println("Parent x = " + super.x);
+	System.out.println("Child x = " + this.x);
   }
 
           // we can't override final methods

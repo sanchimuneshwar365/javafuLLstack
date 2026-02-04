@@ -1,5 +1,4 @@
 package priya;
-package priya;
 
 class BankAcount {
 	
@@ -20,7 +19,7 @@ class BankAcount {
 			balance = balance + amount;
 			System.out.println("Withraw:" + amount);
 	    else {
-				System.out.println("Insufficient Balance";
+				System.out.println("Insufficient Balance");
 			}
 				
 	}
@@ -30,15 +29,13 @@ class BankAcount {
 		
 }
 	public class Main{
-		public static void main (String[] args) {
-			BankAccount account = new BankAccount(1000);
-
-	        account.deposit(500);
-	        account.withdraw(300);
+		public static <BankAccount> void main (String[] args) {
+	    BankAcount account = (BankAcount) new BankAccount(1000);
 
 	        System.out.println("Current Balance:" + account.getBalance());
 
 		}
 	}
+
 
 

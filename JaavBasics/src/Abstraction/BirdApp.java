@@ -22,11 +22,7 @@ abstract class Bird{
 	abstract void eat();
 	abstract void fly();
 }
-abstract class Sparrow extends Bird{            // The type Parrot must implement the implement the inherited abstract method Bird.fly()
-	void eat() {
-		System.out.println("Sparrow is eating");
-	}
-}
+
 abstract class Sparrow1 extends Bird{            // The type Parrot must implement the implement the inherited abstract method Bird.fly()
 	void fly() {
 		System.out.println("Sparrow is flying");

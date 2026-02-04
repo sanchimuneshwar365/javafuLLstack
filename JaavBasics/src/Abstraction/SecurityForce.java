@@ -1,24 +1,24 @@
 package Abstraction;
 
-public class SecurityForce {
+public class SecurityForceApp{
 	public static void main(String[] args) {
 		System.out.println("=======Army=====");
-		duty1(new Army());
+		duty(new Army());
 		System.out.println();
 		System.out.println("=======Navy=====");
-		duty1(new Navy());
+		duty(new Navy());
 		System.out.println();
 		System.out.println("=======Airways=====");
-		duty1(new AirForce());
+		duty(new AirForce());
 
 } 
-	static void duty1 (SecurityForce1 sf) {
+	static void duty (SecurityForce sf) {
 		sf.protect();
 	}
 }
 
 	
-abstract class SecurityForce1{
+abstract class SecurityForce{
 	abstract void protect();
 }
 class Army extends SecurityForce{
