@@ -5,5 +5,5 @@
  * 
  */
 module JaavBasics {
-	requires jdk.compiler;
+	requires java.compiler;
 }
